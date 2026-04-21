@@ -4,14 +4,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// Ödevde istenen Request yapısı
+// istenen Request yapÃ½sÃ½
 typedef struct {
     int id;
-    int urgency; // RFC 9213: u=0 en öncelikli, u=7 en az öncelikli
+    int urgency; // RFC 9213: u=0 en Ã¶ncelikli, u=7 en az Ã¶ncelikli
     char data[256];
 } Request;
 
-// Dinamik dizi tabanlı Min-Heap yapısı
+// Dinamik dizi tabanlÃ½ Min-Heap yapÃ½sÃ½
 typedef struct {
     Request *heap;
     int size;
